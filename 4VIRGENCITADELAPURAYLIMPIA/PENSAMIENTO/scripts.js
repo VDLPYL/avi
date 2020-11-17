@@ -9,7 +9,10 @@
 
 
 /** TIPOS DE DATOS
-* number { console.log(typeof 50)}
-*
+* NUMBER  { console.log(typeof 50)} - Para todos los tipos de números. Enteros o decimales    
+* STRING - Cadena de texto "VIRGENCITA DE LA PURA Y LIMPIA", se puede escribir con 'comillas simples' o "comillas dobles"       
+* BOOLEAN - false, true { console.log(typeof true)}
+* 
+* 
 */
-console.log(typeof 50)
+
