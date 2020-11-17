@@ -14,5 +14,20 @@
 * BOOLEAN - false, true { console.log(typeof true)}
 * 
 * 
+
+** Colecciones de Datos (identificador) que tiene un identificador (0) y un valor ("José")    
+// ARRAY (Arreglo) console.log (["José", "Juan", "Jean", "Oto"])   
+
+// OBJETOS
+* console.log (typeof {
+               nombre: "Beto",
+               apellido: "Quiroga"
+              })
+
+Dato-> // NULO -> null
+               console.log (typeof null) { también me dice que este Tipo de Dato es un Objeto)    
+
+
+// (typeof -> Es para ver, de que tipo son estos datos
 */
 
