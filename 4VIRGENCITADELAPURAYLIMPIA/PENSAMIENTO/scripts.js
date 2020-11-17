@@ -50,6 +50,20 @@ Variable-> Las variables son espacios reservados en memoria para poder almacenar
    console.log (typeof profesor)  {profesor=874} -> console number     
 */
 
+/**
+ * ASIGNACIÓN POR REFERENCIA
+   let profesor = "Alexys"
+   let alumno  =  profesor
+   profesor  =  "Alvaro"
+   alumno  =  "Beto"
+   
+   console.log ("profesor")
+   vonsole.log ("alumno")
+  */
+
+
+
+
 
 
 
