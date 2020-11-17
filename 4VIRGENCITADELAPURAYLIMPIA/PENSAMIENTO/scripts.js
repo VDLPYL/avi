@@ -31,3 +31,47 @@ Dato-> // NULO -> null
 // (typeof -> Es para ver, de que tipo son estos datos
 */
 
+
+/*2.4- Declaración y Asignación
+Tipo de Dato - No definido -> undefined {console.log (typeof undefined)}
+
+Variable-> Las variables son espacios reservados en memoria para poder almacenar información -> para poder almacenar datos, en espacios reservados de memoria y luego posteriormente reutilizarlos he incluso reasignarlos.                                
+// Declaración {de una variable} 
+   {var alumno} {let alumno}
+// Asignación 
+   {alumno = "Beto Quiroga"}
+// Declaración y Asignación
+   let profesor = "Alexys Lozada"
+       console.log (profesor)
+// Reasignación -> Es darle un nuevo nombre a las variables.
+   profesor = "Alvaro Felipe"
+
+   console.log (profesor)
+   console.log (typeof profesor)  {profesor=874} -> console number     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
