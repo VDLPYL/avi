@@ -48,7 +48,7 @@ Variable-> Las variables son espacios reservados en memoria para poder almacenar
 
    console.log (profesor)
    console.log (typeof profesor)  {profesor=874} -> console number     
-
+*/
 
 
 
