@@ -197,7 +197,24 @@ Ejemplo con buleano
 
 
 /** 3.5- OPERADORES DE COMPARACIÓN 2  {2:27m}
+  * Los siguientes operadores de comparación, son operadores estrictamente aritméticos
+  // MAYOR QUE >
+  // < menor que
+  // Mayor o igüal que >=
+  // <= menor o igüal que
 
+ - Esto estrictamente estaríamos hablando de datos numéricos, porque no podemos comparar 2 cadenas de texto   
+ - Bueno, tenemos nuestras variables que va ha ser 20 y b que va ha ser 10
+ 
+   * let a = 20
+     let b = 10
+     console.log ( a > b )   { true }
+                 ( a < b )   { false }
+
+   * let a = 20
+     let b = 20
+     console.log ( a <= b )   { true }
+     
 
 
 
