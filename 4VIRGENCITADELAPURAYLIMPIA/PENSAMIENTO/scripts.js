@@ -65,15 +65,14 @@ Variable-> Las variables son espacios reservados en memoria para poder almacenar
 
 
 
-2.6 - Constantes -> Son valores que no cambian
-/**
+/** 2.6 - Constantes -> Son valores que no cambian
   * 
      const NOMBRE_EMPRESA = "EDteam"
      const SITIO_WEB = "https://ed.team"
   */
 
 
-3.1- /** Operadores aritméticos {7:06m} básicas
+/** 3.1- Operadores aritméticos {7:06m} básicas
          //   +   -   *   /   %
          //   % Este es el operador de residuo
 
@@ -83,17 +82,40 @@ Ejercicio 1   let operacion = 50 {+ - * / %} 60
 
 
 Ejercicio 2   let numero1 = 10 - 5
-              let numeto2 =  4 / 2
+              let numero2 =  4 / 2
 
               let operacion = numero1 + numero2
               console.log (operacion)   {7}
+    */
 
 
 
 
+/**  3.2- Operaciones de Asignacion {4:58m}
+  *  =
+      let a = 10
+      let b =  4
 
-/**  3.2- Operaciones de Asignacion {4:50m}
+      a = a + b   =>   a += b
+                       a -= b
+                       a *= b
+                       a /= b
+                       a %= b
+      console.log (a)
+         
+          Operador aritmético de exponencial
+          let a = 5
+          let b = 3
+          console.log (a**b)  {125} Es 5 elevado al cubo=>{3}
 
+ - El operador aritmético de exponencial, también se puede utilizar en la asignación   
+          let a = 5
+          let b = 3
+
+          a **= b
+          console.log (a)
+
+   */
 
 
 
