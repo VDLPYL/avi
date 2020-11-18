@@ -122,6 +122,100 @@ Ejercicio 2   let numero1 = 10 - 5
 
 
 
+/** 3.3- OPERADOR DE CONCATENACIÓN { + }
+  *  (+)
+
+     let nombre = "Beto"
+     let apellido = "Quiroga"
+ 
+     let nombreCompleto = nombre + " " + apellido
+     console.log (nombreCompleto)   {Beto Quiroga}
+
+     // Template String
+     let nickname = `Mi nombre es ${nombre} y mi apellido es ${apellido}`
+     console.log (nickname)
+- Se puede hacer operaciones matemáticas ${20+10} ${20>10}
+ - {``} Estos se llaman `backs sticks`, son como las tildes o acentos, pero invertidos
+  */
+
+
+
+/** 3.4- OPERADORES DE COMPARACIÓN 1
+    // Es igüal == (Compara solo el valor)
+    // Es estrictamente igüal === (Compara valor y tipo de dato)
+    // Es diferente != {no es igüal} (Verifica que los valores sean diferentes)
+    // Es estrictamente diferente !==
+ - { Estos 4 operadores de comparación lo podemos hacer tanto con números, como con cadenas de texto y también incluso con buleanos }    
+
+    let a = 50
+    let b = "50"
+1 * let resultado = a == b
+    console.log (resultado)  {true}
+
+2 * let resultado = a === b
+    console.log (resultado)  {false}
+
+
+3 * let a = 24
+    let b = 6
+    let resultado = a != b
+    console.log (resultado)   {true}
+
+  * let a = 24
+    let b = 24
+    let resultado = a != b
+    console.log (resultado)   {false}
+
+4 * let a = 24
+    let b = "24"
+    let resultado = a !== b
+    console.log (resultado)  {true}
+
+    let a = 10
+    let b = 25
+    let resultado = a !== b
+    console.log (resultado)  {true}
+
+    let a = "Alberto"
+    let b = "Beto"
+    let resultado = a !== b
+    console.log (resultado)  {true}
+
+    let a = "Alberto"
+    let b = "Alberto"
+    let resultado = a !== b
+    console.log (resultado)  {false}
+
+Ejemplo con buleano
+    let a = true
+    let b = false
+    let resultado = a !== b
+    console.log (resultado)  {true}
+    */
+
+
+
+
+/** 3.5- OPERADORES DE COMPARACIÓN 2  {2:27m}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
