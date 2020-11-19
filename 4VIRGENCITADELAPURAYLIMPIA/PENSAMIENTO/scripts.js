@@ -300,6 +300,52 @@ Ejemplo 1    let a = 5
 
 /** 3.8- Type coercion {10:36m}
 
+- Type coercion es la capacidad que tiene el lengüaje de programación, en este caso JavaScript, de poder convertir un o cualquier dato en otro tipo de dato.      
+- Si una variable almacena un String, otra variable almacena un número, JavaScript puede decidir precísamente que tipo de dato va ha ser esa variable.        
+
+     let a = 521
+     let b = "422"
+     let resp = a + b
+     console.log (typeof resp)  {string}
+     console.log (typeof a)     {number}
+     console.log (typeof b)     {string}
+
+  // NaN  =>  Not a number
+
+     Falso = 0   false
+ Verdadero = 1   true
+
+        let a = true
+        let b = true
+        let resp = a + b
+        console.log (typeof resp)  {number}
+        console.log (resp)         { 2 }
+  */
+
+
+
+/** 4.1- Las condicionales  {9:08m}
+Invitación a una fiesta
+Si eres mayor de edad y menor de 65 años puedes venir a la fiesta.
+
+     let persona = "Juan Alexis"
+     let edad    =  25
+
+     if (edad > 18  &&  edad < 65) {
+        console.log (`${persona} puedes venir a la fiesta`)
+     }
+ - en la consola { Juan Alexis puedes venir a la fiesta          scripts.js:14 }
+ */
+
+
+
+
+
+
+
+
+/** 4.2- If Else  {4:06m}
+
 
 
 
