@@ -214,9 +214,45 @@ Ejemplo con buleano
    * let a = 20
      let b = 20
      console.log ( a <= b )   { true }
-     
+   */
 
 
+
+/** 3.6- Operadores Lógicos {7:03m}  
+
+ - Los operadores lógicos simplemente son 2
+   AND   ( && )   doble ampersam
+    OR   ( || )   doble paint
+
+ - Los operadores lógicos nos sirven para poder unir, para poder concatenar 2 validaciones, generalmente 2 operadores de comparación.
+
+   let a = 10
+   let b = 20
+   let c = 30
+
+ // Saber si b es mayor que a y si b es mayor que c  
+   let resp = ( b > a )  &&  ( b > c )
+
+ // Saber si b es menor que a  o  si b es menor que c 
+   let resp = ( b < a )  ||  ( b < c )
+
+ - Es buena práctica agrupar esto en (paréntesis), para que así estes següro de lo que estás escribiendo    
+ - tengo entonces 2 comparaciones
+    console.log (resp)  {false}
+                        {true}
+
+  let resp = (( b === a )  ||  ( b !== c ))  &&  ( 5 < 2 )   
+  console.log (resp)  {false}
+
+ - Si tú quieres repasar las tablas de verdad, para entender esta lógica, pues tienes que descempolvar tus libros del colegio. Y es buena hora para repasar esas tablas de verdad.
+ - En programación todos los dias vas ha ver comparaciones, estas comparaciones las vas hacer absolutamente todos los dias
+ */
+
+
+
+
+
+/** 3.7- Operadores unarios y ternarios {5:50m}
 
 
 
