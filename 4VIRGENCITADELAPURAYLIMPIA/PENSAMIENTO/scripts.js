@@ -254,7 +254,51 @@ Ejemplo con buleano
 
 /** 3.7- Operadores unarios y ternarios {5:50m}
 
+         Operadores Unarios
+         ¿Por qué se llaman operadores unarios? 
+          Porque para funcionar como tal, no necesitan, sino de el mismo   
+Ejemplo 1    let a = 10
+             console.log (a) {10}
+         ¿Qué pasaría, si yo por algún motivo quiero sumarle un dígito a mi letra "a", solo un valor.?
+         - Entonces quiero que por aquí salga 11 ¿Cómo lo haría? El operador unario me permite hacer lo siguiente.
+         - A mi variable "a" le voy a decir que se incremente en 1, con simplemente decirle más más, con más más le estoy diciendo que se incremente en 1, entonces "a" ya no va ha ser 10, "a" miren, ahora es 11.
 
+             let a = 10
+             a++
+             console.log (a) {11}
+
+
+Ejemplo 2    let a = 10
+             a++
+             a++
+             a++
+             a++
+             console.log (a) {14}
+
+
+Ejemplo 3    let a = 10
+             a--
+             console.log (a) {9}
+
+
+         Operadores Ternarios {m2:14/5:50}
+                    Terna = 3
+Ejemplo 1    let a = 5
+             let b = 8
+             let c = b > a ? "ES VERDAD!!!" : "¡¡¡¡¡ESTO ES FALSO!!!!!"
+             console.log (c)  {ES VERDAD!!!}
+
+             let c = b < a ? "ES VERDAD!!!" : "¡¡¡¡¡ESTO ES FALSO!!!!!"
+             console.log (c)  {¡¡¡¡¡ESTO ES FALSO!!!!!"}
+
+ - Entonces tanto los operadores unarios, como los ternarios, son algo que ustedes van ha necesitar todos los dias, en su carrera como programador.
+ */
+
+
+
+
+
+/** 3.8- Type coercion {10:36m}
 
 
 
