@@ -420,7 +420,97 @@ L32  }
 
 /** 4.5- Ciclo for    {10:58m}
 - Los CICLOS también son conocidos como BUCLES de código o LOOPS de código
-  // for
+- Son CICLOS o BLOQUES de código que se repiten hasta que nosotros lo detenemos
+  // for   {es la palabra reservada} {todo lo que yo ponga dentro de este bloque de código, se va ha ejecutar muchas veces}
+  
+  
+  for (valor de inicialización; condición; valor o incremento de valor) {
+  
+  }
+
+Ejemplo 1  for (let i = 0; i < 10; i++) {
+              console.log(i)
+           }
+
+
+
+
+
+/*
+i => 0, i es menor que 10??  SI => console.log(i), i se incrementa y ahora vale 1
+i vale 1, i es menor que 10??  SI => console.log(i), i se incrementa y ahora vale 2
+i vale 2, i es menor que 10??  SI => console.log(i), i se incrementa y ahora vale 3
+.......
+i vale 9, i es menor que 10??  SI => console.log(i), i se incrementa y ahora vale 10
+i vale 10, i es menor que 10?? NO.  ¡¡¡TERMINÉ!!!
+*/
+*/
+
+
+
+/* 4.6- Ciclo con for  {7:04m}
+
+// Dado un texto deseamos imprimir su contenido letra por letra
+
+let texto = "betoquiroga"
+
+//{console.log(texto[0])
+console.log(texto[1])
+console.log(texto[2])}
+
+Ejemplos 1
+for (let i = 0; i < texto.length; i++) {
+   console.log(texto[i])
+}
+
+Ejemplo 2
+for (let i = 0; i < 10; i++) {
+   console.log(texto[i])
+}
+*/
+
+
+
+
+
+/*  4.7- Ciclo While  {8:22m}  While en ingles significa ¡mientras!
+// Regalar juguetes
+
+let juguetes = 10
+
+Ejemplo 1
+while (juguetes > 0) {
+   console.log(`Regalamos un juguete. Nos quedan ${juguetes-1}´)
+   juguetes--
+}
+
+
+Ejemplo 1 mas optimizado
+while (juguetes > 0) {
+   juguetes--
+   console.log(`Regalamos un juguete. Nos quedan ${juguetes-1}´)
+}
+*/
+
+
+
+
+/*  5.1- Sintaxis básica  {8:51m}
+  // Funciones son bloques de código que son reutilizables
+  // Funciones son acciones
+  
+  
+  
+  // Declaración de mi función saludar
+  funtion saludar() {
+     console.log("Hola, muy buenos dias")
+  }
+
+
+
+
+
+
 
 
 
