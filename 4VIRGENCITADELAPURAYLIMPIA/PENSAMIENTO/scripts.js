@@ -352,18 +352,75 @@ Si eres mayor de edad y menor de 65 años puedes venir a la fiesta.
     */
 
 
-/** 
-
+/** 4.3- If Else If  {6:18m}
+- Sino, si tienes permiso firmado de tus padres puedes venir
+  let permiso = true
+  } else if (permiso)    ------>    {(permiso === true)}  =>   } else if (permiso === true && edad < 18){
+     console.log(Puedes venir, tienes permiso)
+  } else {
+  - el permiso solo es para menores de 18 años
+  - en la consola  { Por favor quédate en casa Juan Alexis }
+      // if
+      // if else
+      // if else if
+      - estas son las 3 condiciones simples.
 */
 
 
+/** 4.4-  Switch  {12:35m}    Condicionales Múltiples
+- Los comentarios de bloque a sido de escribir {/***/}    */  y justo entre el segúndo y tercer asterisco hay que darle el salto de linea, con un Enter
+/** ¿Qué personaje de dragon ball z eres?
+Si eres fuerte y comelón eres Gokú
+Si eres veloz y egoista eres Vegeta
+Si eres pequeño y débil eres Krilin
+Si eres travieso y juguetón eres trunks
+Si no eres ningüno, eres una sabandija.
 
 
 
+L14 let personalidad = "Pequeño y débil"
+l16
+l17  if (personalidad === "Fuerte y comelón") {
+L18       console.log("Eres Gokú)
+L19   } else if (personalidad === "Velóz y egoista") {
+L20       console.log ("Eres Vegeta")
+L21   } else if personalidad === "Pequeño y débil") {
+L22       console.log ("Eres Krilin")
+L23   } else if (personalidad === "Travieso y jugüetón") {
+L24       console.log ("Eres Trunks")
+L25   } else {
+L26      console.log ("Eres una sabandija")
+L27   }
+L28
 
 
 
+{m6:48/12:35}                   CONDICIONAL  MÚLTIPLE       {m10:49/12:35}
 
+L15  let personalidad = "Pequeño y débil"
+L16
+L17  switch (personalidad) {
+L18     case "Fuerte y comelón":
+L19       console.log("Eres Gokú")
+L20       break
+L21     case "Veloz y egoista":
+L22       console.log("Eres Vegeta")
+L23       break
+L24     case "Pequeño y débil":
+L25       console.log("Eres Krilin")
+L26       break
+L27     case "Travieso y juguetón":
+L28       console.log("Eres Trunks")
+L29       break
+L30    default:
+L31       console.log("Eres una sabandija!!!")
+L32  }
+*/
+
+
+/** 4.5- Ciclo for    {10:58m}
+- Los CICLOS también son conocidos como BUCLES de código o LOOPS de código
+  // for
 
 
 
