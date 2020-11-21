@@ -345,7 +345,16 @@ Si eres mayor de edad y menor de 65 años puedes venir a la fiesta.
 
 
 /** 4.2- If Else  {4:06m}
+ *-  Sino por favor quédate en casa
+ L16   } else {
+           console.log(`Por favor, quedate en casa ${persona}`)
+       }
+    */
 
+
+/** 
+
+*/
 
 
 
