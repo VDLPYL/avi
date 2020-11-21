@@ -506,6 +506,28 @@ while (juguetes > 0) {
      console.log("Hola, muy buenos dias")
   }
 
+// Llamado a la función saludar
+  saludar()
+*/
+
+
+
+/*   5.2- Parámetro
+ //Funciones y Parámetros
+ 
+  funtion saludar(nombre) {
+     console.log(typeof nombre)          {number}
+     if (typeof nombre === "string") {
+     console.log(`Hola ${nombre}, muy buenos dias`)
+  } else {
+     console.log("Escriba un nombre correcto")
+
+// Llamado a la función saludar
+  saludar("Alexys Lozada")
+  - saludar(562)   {Hola 562, muy buenos dias}
+  saludar(56.45)     {no paso nada}{Escriba un nombre correcto}
+  
+ */
 
 
 
@@ -513,11 +535,53 @@ while (juguetes > 0) {
 
 
 
+/* 5.3- Valores de retorno {8:05m}
+
+Ejemplo 1
+ funtion obtenerNombreCompleto(nombre, apellido) {
+    let nombreCompleto = `${nombre} ${apellidos}`
+    
+    return nombreCompleto
+ }
+
+obtenerNombreCompleto("Beto", "Quiroga M.")
+
+
+Ejemplo 1 {de otra forma} - Las dos formas son completamente válidas {Ctrl + X} es para cortar y {Ctrl + V} es para pegar lo cortado
+ funtion obtenerNombreCompleto(nombre, apellido) {
+    return `${nombre} ${apellidos}`
+ }
+
+obtenerNombreCompleto("Beto", "Quiroga M.")
+
+ ejemplo 1 solo voy a imprimir
+ funtion obtenerNombreCompleto(nombre, apellido) {
+    return `${nombre} ${apellidos}`
+ }
+
+console.log(obtenerNombreCompleto("Beto", "Quiroga M."))
+console.error(obtenerNombreCompleto("Beto", "Quiroga M."))    {Aquí me sale Beto Quiroga M. pero en formatod de error}
+*/
 
 
 
 
 
+
+/* 5.4 - Funciones de primera clase {6:04m}
+
+-En lengüaje de programación, los tipos de datos primitivos se consideran ciudadanos de primera clase,
+entonces todo lo que puede ser almacenado dentro de una variable, precisamente son eso: ciudadanos
+todo lo que se puede almacenar dentro de una variable, considerados ciudadanos de primera clase
+
+
+*/
+
+
+
+
+
+/* 5.5- Funciones anónimas  {7:30m}
 
 
 
