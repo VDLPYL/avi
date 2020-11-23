@@ -574,14 +574,191 @@ console.error(obtenerNombreCompleto("Beto", "Quiroga M."))    {Aquí me sale Bet
 entonces todo lo que puede ser almacenado dentro de una variable, precisamente son eso: ciudadanos
 todo lo que se puede almacenar dentro de una variable, considerados ciudadanos de primera clase
 
+funtion obtenerNombreCompleto(nombre, apellido) {
+   return `${nombre} ${apellidos}`
+}
 
+let nombreCompleto = obtenerNombreCompleto("Beto", "Quiroga M.")
+
+console.log(nombreCompleto)
 */
+ 
+//L581  obtenerNombreCompleto      {si yo güardo sin los (paréntesis), lo que estoy güardando es la función
+//L581  obtenerNombreCompleto()    {si yo güardo así, con los (paréntesis), yo lo que estoy güardando es la ejecución de la función
+
 
 
 
 
 
 /* 5.5- Funciones anónimas  {7:30m}
+
+let sumar = función(a, b, c) {
+   return a+b+c
+}
+
+
+
+console.log(typeof sumar)
+
+// sumar(2, 4, 5)      {esta va ha ser la función que se ejecute}
+// este dato yo podría imprimir en consola así    - console.log(sumar(2, 4, 5))
+
+// o podría almacenarla en otra variable   - let resultado = sumar(2, 4, 5)
+// y yo recién puedo imprimir resultado    - console.log(resultado)      {11}
+
+
+
+otro ejemplo - aquí estoy declarando la función y al mismo tiempo la estoy ejecutando
+(funtion(a, b, c) {
+   console.log(a+b+c)
+}(10, 4, 5))                        en la consola {19}
+
+*/
+
+
+
+/*  5.6-  Funciones como constantes  {4:09m}
+
+const saludar = function(nombre) {
+   console.log(`Hola ${nombre}`)
+}
+
+console.log(saludar)      {aquí me va ha salir todas las lineas que estén almacenadas dentro de la función saludar}
+console.log(saludar("Juan"))           {Hola Juan}
+
+
+- const  - son para las funciones que no se van ha cambiar
+- let    - son para las funciones o palabras reservadas que si se van ha cambiar
+*/
+
+
+
+
+/*    5.7 - Scope   {11:13m}
+ejemplo 1
+let nombre = "Alexis"
+nombre = "Juan"
+
+const saludar = funtion() {
+   let nombre = "Beto Quiroga"
+   console.log(`Hola ${nombre}
+}
+
+console.log(nombre)
+
+saludar()
+
+
+
+ejemplo 2
+let nombre = "Alexis"
+nombre = "Juan"
+
+const saludar = funtion() {
+  nombre = "Beto Quiroga"
+  console.log(`Hola ${nombre}
+}
+
+saludar()
+console.log(nombre)
+
+
+
+ejemplo 3
+const NOMBRE = "Alexis"
+
+const saludar = funtion() {
+   const NOMBRE = "juan"              {esta constante solo vive dentro de estas {llaves} y este es el SCOPE de esta variable}
+  console.log(`Hola ${nombre}
+}
+
+saludar()
+console.log(NOMBRE)
+*/
+
+
+
+
+
+/* 5.8 - Funciones flecha  {16:19m}   - arrow functions {=>}
+ejemplo 1
+const sumar = funcion(a, b, c) {
+  return a+b
+}
+
+const restar = function(c, d) {
+   return c-d
+}
+
+console.log(sumar(10, 5))     {15}
+console.log(restar(5, 1))     {4}
+
+
+
+ejemplo 1 con - arrow funtions {=>}
+
+const sumar = (a, b) => a+b
+const restar = (c, d) => c-d
+
+console.log(sumar(71, 3))               en la consola 74
+console.log(restar(10, 4))              en la consola 6
+
+
+ejemplo 2
+- regla:_ cuando tu función de flecha solamente reciba un parámetro, no le pongas (paréntesis)   {en (nombre) L709}
+const saludar = (nombre) => `Hola ${nombre}, buenos dias`
+
+console.log(saludar("Beto"))            en la consola Hola Beto, buenos dias
+
+
+
+ejemplo 3
+const saludar = nombre => {
+   if(typeof nombre === "string") {
+      console.log(`Hola ${nombre}`)
+   }  else  {
+      console.error("Tipo de dato equivocado!!!")
+   }
+}
+
+saludar(6464)
+
+
+ejemplo 3  solo es otro ejemplo didáctico
+const saludar = nombre => {
+   if(typeof nombre === "string") {
+      return `Hola ${nombre}`
+   }  else {
+      console.error("Tipo de dato equivocado")
+   }
+}
+
+console.log(saludar("Juan"))
+
+nota:_ todo problema grande, debemos partir en funciones
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
