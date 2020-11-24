@@ -706,7 +706,7 @@ console.log(restar(10, 4))              en la consola 6
 
 
 ejemplo 2
-- regla:_ cuando tu función de flecha solamente reciba un parámetro, no le pongas (paréntesis)   {en (nombre) L709}
+- regla:_ cuando tu función de flecha solamente reciba un parámetro, no le pongas (paréntesis)   {en (nombre) L710}
 const saludar = (nombre) => `Hola ${nombre}, buenos dias`
 
 console.log(saludar("Beto"))            en la consola Hola Beto, buenos dias
@@ -737,6 +737,455 @@ const saludar = nombre => {
 console.log(saludar("Juan"))
 
 nota:_ todo problema grande, debemos partir en funciones
+*/
+
+
+
+
+
+
+
+/*  6.1 - Métodos de Array  {9:40m}
+ejemplo 1
+let amigos = {"Pedro", "Gabriel", "Erick", "Daniel"}
+ console.log(amigos)      en la consola ["Pedro", "Gabriel", "Erick", "Daniel"]
+
+// Agregar elementos a mi array
+
+amigos.push("Gastón")      {este Método .push nos sirve para agregarle un elemento al Areglo al array}
+console.log(amigos)        en la consola ["Pedro", "Gabriel", "Erick", "Daniel", "Gastón"]
+
+
+ejemplo 2
+let amigos = {"Pedro", "Gabriel", "Erick", "Daniel"}
+
+// Agregar elementos a mi array
+let dato = amigos.push("Gastón")                  {se puede almacenar en una variable{L763 dato} y poder saber cuanto de tamaño tiene su areglo luego de ha ver ejecutado amigos.push}  
+
+console.log(dato)          en la consola    5  
+console.log(amigos)        en la consola ["Pedro", "Gabriel", "Erick", "Daniel", "Gastón"]
+*/
+
+
+
+
+
+/* 6.2 - Métodos que no modifican el array   {5:44m}
+ejemplo 1   método pop()      - quita un elemento
+let amigos = {"Pedro", "Gabriel", "Erick", "Daniel"}
+
+// Agregar elementos a mi array
+let dato = amigos.pop()                  {se puede almacenar en una variable{L763 dato} y poder saber cuanto de tamaño tiene su areglo luego de ha ver ejecutado amigos.push}  
+
+console.log(dato)          en la consola    Daniel  
+console.log(amigos)        en la consola ["Pedro", "Gabriel", "Erick"]
+
+
+
+
+
+
+ejemplo 2   método slice()      - no modifica nada
+let amigos = {"Pedro", "Gabriel", "Erick", "Daniel"}
+
+// Agregar elementos a mi array
+let dato = amigos.slice(0, 2)                  {se puede almacenar en una variable{L763 dato} y poder saber cuanto de tamaño tiene su areglo luego de ha ver ejecutado amigos.push}  
+
+console.log(dato)       en la consola ["Pedro", "Gabriel"]   
+console.log(amigos)        en la consola ["Pedro", "Gabriel", "Erick", "Daniel"]
+
+
+//- en .slice()  le digo que parta desde mi posición 0, hasta antes de la posición 2 
+*/
+
+
+
+
+/* 6.3 - ForEach  {8:14m}
+
+for (let i = 0; i < amigos.length; i++ {
+   console.log(amigos[i])
+}
+
+
+en la consola
+Pedro
+Gabriel
+Erick
+Daniel
+
+
+// Método for each    o   Foreach    {para cada}
+ejemplo 1
+let amigos = {"Pedro", "Gabriel", "Erick", "Daniel"}
+
+amigos.forEach(funtion(amigo) {
+   console.log(amigo)
+})
+
+
+ejemplo 1 pero optimizando con   arrow functions {=>}
+let amigos = {"Pedro", "Gabriel", "Erick", "Daniel"}
+
+amigos.forEach(amigo => {
+   console.log(amigo)
+})
+
+
+ejemplo 1 optimizando más todavía con   arrow functions {=>}
+let amigos = {"Pedro", "Gabriel", "Erick", "Daniel"}
+
+amigos.forEach(amigo => console.log(amigo))
+
+
+
+
+ejemplo 2
+
+let amigos = {"Pedro", "Gabriel", "Erick", "Daniel"}
+
+let dato = amigos.forEach(amigo => `Hola ${amigo}`)
+
+console.log(amigos)
+
+- en la consola  ["Pedro", "Gabriel", "Erick", "Daniel"]
+
+
+ejemplo 2   completo
+
+let amigos = {"Pedro", "Gabriel", "Erick", "Daniel"}
+
+let dato = amigos.forEach(amigo => console.log(`Hola ${amigo}`))
+
+console.log(amigos)
+
+en la consola   
+Hola Pedro
+Hola Gabriel
+Hola Erick
+Hola Daniel
+(4) ["Pedro", "Gabriel", "Erick", "Daniel"]
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 6.4 - ForEach vs Map   {4:39m}
+
+//  Método .map()
+- .map tiene la misma funcionalidad que forEach
+
+ejemplo 1
+let amigos = {"Pedro", "Gabriel", "Erick", "Daniel"}
+
+let dato = amigos.map(amigo => console.log(`Hola ${amigo}`))
+
+console.log(amigos)
+
+
+ejemplo 2
+let amigos = {"Pedro", "Gabriel", "Erick", "Daniel"}
+
+let dato = amigos.map(amigo => `Hola ${amigo}`)
+
+console.log(amigos)        en la consola  (4) ["Pedro", "Gabriel", "Erick", "Daniel"]
+console.log(dato)          en la consola  (4) ["Hola Pedro", "Hola Gabriel", "Hola Erick", "Hola Daniel"]
+
+- hoy en día el uso de forEach está bastante descontinuado
+- en casi todos los desarrollos se utilizan .map
+*/
+
+
+
+
+
+
+
+/* 6.5 - Filter  {6:02m}   es para filtrar contenidos
+ejemplo 1  con  .map
+let numero = [10, 436, 45, 74, 33, 9, 2, 54]
+
+let nuevoArray = []
+
+numero.map(num => {
+   if(num > 20) {
+      nuevoArray.push(num)
+   }
+})
+
+console.log(nuevoArray)
+console.log(numeros)
+
+
+
+ejemplo 2    con .filter
+let numero = [10, 436, 45, 74, 33, 9, 2, 54]
+let dato = numero.filter(num => num>20)         {solo los mayores> de 20}
+console.log(dato)
+
+
+
+
+ejemplo 3    con .filter
+let numero = [10, 436, 45, 74, 33, 9, 2, 54]
+let dato = numero.filter(num => num<20)         {solo los <menores de 20}
+console.log(dato)
+*/
+
+
+
+
+
+
+
+/* 6.6 - Find includes some every      {7:11m}
+
+//  Find, includes, some, every
+
+ejemplo 1    con .find
+let numero = [10, 436, 45, 74, 33, 9, 2, 54]
+let dato = numero.find(num => num>39)         {solo los mayores> de 39}
+console.log(dato)    {436} devuelve solo el 1er numero mayor a 39
+
+
+
+ejemplo 2    con .find
+let numero = [10, 436, 45, 74, 33, 9, 2, 54]
+let dato = numero.find(num => num%2 === 1)         {aquí le digo que me devuelva el 1er número que su residuo sea 1}
+console.log(dato)    {45} devuelve solo el 1er numero impar de esta secuencia
+
+
+
+
+
+ejemplo 3    con .includes no hay comparación, es exactamente igüal
+let numeros = [10, 436, 45, 74, 33, 9, 2, 54]
+let dato = numeros.includes(33)         { true o false}  en este caso me esta devolviendo un buleano
+console.log(dato)   {true}
+
+
+
+
+ejemplo 4    con .some  - es si alguno de estos números incluye esta validación
+let numeros = [10, 436, 45, -74, 33, 9, 2, 54]
+let dato = numeros.some(num => num<0)        
+console.log(dato)    {true}
+
+
+
+
+
+ejemplo 5    con .some  - es si alguno de estos datos incluye esta validación
+let numeros = [10, 436, 45, "beto", 33, 9, 2, 54]
+let dato = numeros.some(num => typeof num === "string")        
+console.log(dato)    {true}
+
+
+
+
+ejemplo 6    con .every
+- .every significa que voy a comparar o voy a validar si todos los elementos, absolutamente todos los elementos cumplen con una condición
+let numeros = [10, 436, 45, "beto", 33, 9, 2, 54]
+let dato = numeros.every(num => typeof num === "string")        
+console.log(dato)    {false}
+
+
+
+ejemplo 7    con .every
+- .every significa que voy a comparar o voy a validar si todos los elementos, absolutamente todos los elementos cumplen con una condición
+let numeros = [10, 436, 45, "beto", 33, 9, 2, 54]
+let dato = numeros.every(num => typeof num === "number")        
+console.log(dato)    {false}
+
+
+
+ejemplo 8    con .every
+- .every significa que voy a comparar o voy a validar si todos los elementos, absolutamente todos los elementos cumplen con una condición
+let numeros = [10, 436, 45, 52, 33, 9, 2, 54]
+let dato = numeros.every(num => typeof num === "number")        
+console.log(dato)    {true}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 6.7 - Manipulando strings   {12:19m}
+ejemplo 1
+let texto = "Alberto Junior Quiroga Muñoz"
+
+let dato = texto.slice(3)
+console.log(dato)      {erto Junior Quiroga Muñoz}
+
+
+
+ejemplo 2
+let texto = "erto Junior Quiroga Muñoz"
+
+let dato = texto.slice(3, 10)
+console.log(dato)      {o Junio}  - el 3 y el 10 elimina, pero primero cuenta de izquierda a derecha
+
+
+
+ejemplo 3
+let texto = "Alberto Junior Quiroga Muñoz"
+
+let dato = texto.split(" ")
+console.log(dato)      {(4) ["Alberto", "Junior", "Quiroga", "Muñoz"]} - me muestra todo como datos separados {ahora esto es una colección de datos}
+
+
+
+
+ejemplo 4
+let texto = "Alberto Junior Quiroga Muñoz"
+
+let dato = texto.split("r")
+console.log(dato)      {(4) ["Alber", "to Junio", " Qui", "oga Muñoz"]} - el caractér que yo elija, no incluye en la separación
+
+
+
+
+ejemplo 5  - este es el método split
+let texto = "Alberto Junior Quiroga Muñoz"
+
+let dato = texto.split("")
+console.log(dato)      {(28) ["A", "l", "b",            "z"]} - separada cada uno de los caracteres
+
+
+
+
+
+ejemplo 5    método search
+let texto = "Alberto Junior Quiroga Muñoz"
+
+let dato = texto.search("")
+console.log(dato)      
+
+
+
+
+
+ejemplo 6
+let texto = "Alberto Junior Quiroga Muñoz"
+
+let dato = texto.toLocaleLoveCase()
+console.log(dato)      {alberto junior quiroga muñoz}
+
+
+
+
+
+ejemplo 7
+let texto = "Alberto Junior Quiroga Muñoz"
+
+let dato = texto.toUpperCase()
+console.log(dato)      {ALBERTO JUNIOR QUIROGA MUÑOZ}
+
+
+
+ejemplo 8
+let texto = "Alberto"
+let texto = "alberto"
+let texto = "ALBERTO"
+
+if (texto.toUpperCase === "ALBERTO") {
+  // hacer algo
+}
+
+console.log(dato)
+*/
+
+
+
+
+
+
+
+
+
+/* 6.8 - Valores y atributos de los objetos    {5:26m}
+  // Objetos
+ejemplo 1
+let alumno = {
+   nombre: "Beto",
+   edad: 21,
+   suscriptor: false,
+   ciudad: "Lima"
+}
+
+console.log(alumno)
+
+
+
+ejemplo 2
+let alumno = {
+   nombre: "Beto",
+   edad: 21,
+   suscriptor: false,
+   ciudad: "Lima"
+}
+
+console.log(alumno.ciudad)     {Lima}
+
+
+
+ejemplo 3
+let alumno = {
+   nombre: "Beto",
+   edad: 21,
+   suscriptor: false,
+   ciudad: "Lima"
+}
+
+console.log(alumno["edad"])      {21}
+
+
+
+ejemplo 4
+let alumno = {
+   nombre: "Beto",
+   edad: 21,
+   suscriptor: false,
+   ciudad: "Lima"
+}
+
+let valores = Object.values(alumno)
+
+console.log(valores)
+
+
+
+
+
+ejemplo 5
+let alumno = {
+   nombre: "Beto",
+   edad: 21,
+   suscriptor: false,
+   ciudad: "Lima"
+}
+
+let valores = Object.keys(alumno)
+
+console.log(valores)
+*/
 
 
 
@@ -755,22 +1204,172 @@ nota:_ todo problema grande, debemos partir en funciones
 
 
 
+/* 6.9 - Math date   {8:05m}
+  //  Match nos permite obtener valores matemáticos
+  y
+  //  Date nos permite tener valores de fecha
+  
+  ejemplo 1
+  const valor = Match.random()    {random() me permite obtener un número aleatorio entre 0 y 1}
+  console.log(valor)
+  
+  
+  
+  ejemplo 2
+- si yo quiero obtener un número aleatorio entre 0 y 10, entonces simplemente este random() lo voy a multiplicar por 10  
+  
+  const valor = Match.random()*10   
+  console.log(valor)
+  
+  
+  
+  
+  ejemplo 3  - voy a obtener el valor de PI
+  
+  const valor = Match.PI    
+  console.log(valor)       en la consola   3.141592653589793
 
+  
+  
+  
+  ejemplo 4  - voy a obtener el cuadrado de 2
+  
+  const valor = Match.SQRT2    
+  console.log(valor)       en la consola   1.4142
+  
+  
+  
+  ejemplo 5  - voy a obtener el logaritmo de 10
+  
+  const valor = Match.LOG10E  
+  console.log(valor)       en la consola   0.43
 
+  
+  
 
+  ejemplo 6  - max
+  
+  const valor = Match.max(50, 2, 26, 88)  
+  console.log(valor)       en la consola  88
+  
+  
+  
+  ejemplo 7  - min
+  
+  const valor = Match.max(50, 2, 26, 88)  
+  console.log(valor)       en la consola  2
+  
+  
+  
 
+  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  ejemplo 8   - Date
+  
+  const valor = new Date()  
+  console.log(valor)       
+    
+  
+  
+  ejemplo 9   - voy a sacar el año utilizando una función
+  
+  const valor = new Date()  
+  console.log(valor.getFullYear())         {2020}
+    
+  
+  
+  ejemplo 10   - voy a sacar el minuto utilizando una función
+  
+  const valor = new Date()  
+  console.log(valor.getMinute())         {9}
+    
+  
+  
+  ejemplo 11   - voy a sacar el día utilizando una función
+  
+  const valor = new Date()  
+  console.log(valor.getUTCDate())         {25} - dice que este día es 25 de agosto
+    
+  */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* 7.1 - Requerimientos  {6:42m}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
