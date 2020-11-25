@@ -1311,7 +1311,7 @@ console.log(valores)
   
   /* 7.1 - Requerimientos  {6:42m}
   
-  
+  - creo una nueva carpeta con el nombre:_ proyectofinal
   
   
   
