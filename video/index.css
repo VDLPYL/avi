@@ -2,7 +2,22 @@ a {
     text-decoration: none;
     color: blue;
 }
-b {
+c {
     text-decoration: none;
     color: red;
+}
+
+d {
+    text-decoration: none;
+    color: pink;
+}
+e {
+    text-decoration: none;
+    color: #00FF00;
+}
+
+/*color naranja claro*/
+n {
+    text-decoration: none;
+    color: #FF8000;
 }
